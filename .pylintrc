@@ -1,0 +1,15 @@
+[MASTER]
+# Score minimum acceptable
+fail-under=8.0
+
+[MESSAGES CONTROL]
+# Désactiver certains messages si nécessaire
+disable=C0114,C0116
+
+[FORMAT]
+# Longueur maximale d'une ligne
+max-line-length=100
+
+[DESIGN]
+# Nombre minimum d'arguments pour une fonction
+min-public-methods=0
