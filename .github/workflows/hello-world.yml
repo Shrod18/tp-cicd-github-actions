@@ -1,0 +1,20 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dire bonjour
+        run: echo "Hello, World! Ceci est mon premier workflow Github Actions!"
+      
+      - name: Afficher la date
+        run: date
+      
+      - name: Lister les fichiers
+        run: ls -la
