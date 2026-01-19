@@ -17,3 +17,17 @@ class SimpleMath:
             La somme de a et b
         """
         return a + b
+
+    @staticmethod
+    def soustraction(a, b):
+        """
+        Soustrait b de a.
+        
+        Args:
+            a: Premier nombre
+            b: Deuxième nombre
+            
+        Returns:
+            La différence de a - b
+        """
+        return a - b

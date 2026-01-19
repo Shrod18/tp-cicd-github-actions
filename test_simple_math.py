@@ -27,6 +27,26 @@ class TestSimpleMath(unittest.TestCase):
         result = SimpleMath.addition(5, 0)
         self.assertEqual(result, 5)
 
+    def test_soustraction_positive_numbers(self):
+        """Test de la soustraction avec des nombres positifs."""
+        result = SimpleMath.soustraction(10, 3)
+        self.assertEqual(result, 7)
+
+    def test_soustraction_negative_numbers(self):
+        """Test de la soustraction avec des nombres négatifs."""
+        result = SimpleMath.soustraction(-5, -3)
+        self.assertEqual(result, -2)
+
+    def test_soustraction_mixed_numbers(self):
+        """Test de la soustraction avec des nombres mixtes."""
+        result = SimpleMath.soustraction(5, 10)
+        self.assertEqual(result, -5)
+
+    def test_soustraction_zero(self):
+        """Test de la soustraction avec zéro."""
+        result = SimpleMath.soustraction(5, 0)
+        self.assertEqual(result, 5)
+
 
 if __name__ == '__main__':
     unittest.main()
